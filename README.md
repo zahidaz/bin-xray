@@ -1,15 +1,26 @@
 <div align="center">
 
+<br>
+
+```
+  ┌─────────────────────────────────────────────────────────┐
+  │ 7f 45 4c 46 02 01 01 00  00 00 00 00 00 00 00 00  │
+  │ 02 00 3e 00 01 00 00 00  40 10 00 00 00 00 00 00  │
+  │ 40 00 00 00 00 00 00 00  98 31 00 00 00 00 00 00  │
+  │ 00 00 00 00 40 00 38 00  0d 00 40 00 1e 00 1d 00  │
+  └─────────────────────────────────────────────────────────┘
+```
+
 # Bin**Xray**
 
-### See through your binaries.
+**See through your binaries.**
 
-An interactive web app for understanding binary executable formats.<br>
-Click bytes, explore structs, watch dynamic linking happen — all in your browser.
+Click bytes. Explore structs. Watch dynamic linking happen.<br>
+All in your browser. No backend. No installs.
 
 <br>
 
-[**Try the Live Demo**](https://zahidaz.github.io/bin-xray)
+### [**>>> Try the Live Demo <<<**](https://zahidaz.github.io/bin-xray)
 
 <br>
 
@@ -25,13 +36,13 @@ Click bytes, explore structs, watch dynamic linking happen — all in your brows
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-FF0050?style=flat-square&logo=framer&logoColor=white)](https://www.framer.com/motion)
 
-</div>
-
 <br>
 
-> **Currently supports ELF.** Mach-O and PE support planned.
+---
 
-No backend. No installs. The entire ELF parser runs client-side in your browser.
+</div>
+
+> **Currently supports ELF.** Mach-O and PE support planned.
 
 <br>
 
@@ -134,52 +145,6 @@ bash scripts/generate-samples.sh
 ```
 
 </details>
-
-<br>
-
-## Tech Stack
-
-| | |
-|---|---|
-| **Framework** | Next.js 15 (App Router, static export) |
-| **Language** | TypeScript (strict) |
-| **Styling** | Tailwind CSS 4 |
-| **Animation** | Framer Motion |
-| **State** | Zustand |
-| **Virtualization** | @tanstack/react-virtual |
-| **Deployment** | Static — GitHub Pages, Vercel, Netlify, any CDN |
-
-<br>
-
-## Project Structure
-
-```
-src/
-  app/
-    page.tsx                        Landing page
-    explorer/page.tsx               Full binary explorer
-    jargon/page.tsx                 Jargon reference
-    modules/[slug]/                 Learning modules 1–6
-  components/
-    hex-viewer/                     Interactive hex dump (6 files)
-    struct-viewer/                  C struct visualization (4 files)
-    memory-map/                     Disk → memory mapping (4 files)
-    plt-got/                        PLT/GOT animation (6 files)
-    pipeline/                       Compilation pipeline (3 files)
-    section-segment/                Section/segment toggle (3 files)
-    narrative/                      Chapter layout, scroll, quiz (4 files)
-    shared/                         Tooltip, toggle, uploader (5 files)
-  lib/
-    elf/                            Pure TypeScript ELF parser (12 files)
-    store/                          Zustand stores (binary + UI)
-    hooks/                          Custom React hooks
-  config/                           Struct metadata definitions
-public/
-  samples/                          Pre-built ELF binaries
-scripts/
-  generate-samples.sh               Build samples on Linux
-  generate-sample-elf.ts            Generate synthetic samples
-```
 
 <br>
 
