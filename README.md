@@ -1,26 +1,10 @@
 <div align="center">
 
-<br>
-
-```
-  ┌─────────────────────────────────────────────────────────┐
-  │ 7f 45 4c 46 02 01 01 00  00 00 00 00 00 00 00 00  │
-  │ 02 00 3e 00 01 00 00 00  40 10 00 00 00 00 00 00  │
-  │ 40 00 00 00 00 00 00 00  98 31 00 00 00 00 00 00  │
-  │ 00 00 00 00 40 00 38 00  0d 00 40 00 1e 00 1d 00  │
-  └─────────────────────────────────────────────────────────┘
-```
-
-# Bin**Xray**
-
-**See through your binaries.**
-
-Click bytes. Explore structs. Watch dynamic linking happen.<br>
-All in your browser. No backend. No installs.
-
-<br>
-
-### [**>>> Try the Live Demo <<<**](https://zahidaz.github.io/bin-xray)
+<a href="https://zahidaz.github.io/bin-xray">
+  <picture>
+    <img src="public/hero.svg" alt="BinXray — See through your binaries" width="100%"/>
+  </picture>
+</a>
 
 <br>
 
@@ -35,10 +19,6 @@ All in your browser. No backend. No installs.
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-FF0050?style=flat-square&logo=framer&logoColor=white)](https://www.framer.com/motion)
-
-<br>
-
----
 
 </div>
 
